@@ -114,10 +114,6 @@ const controlSubmitrecipe = async function (newRecipe) {
   }
 };
 
-const welcomeMsg = function () {
-  console.log('Welcome ✨!');
-};
-
 const init = function () {
   bookmarkView.addHandlerStoreBookmark(bookmarkStorage);
   recipeView.renderListnerEvent(controllerRecipe);
@@ -126,6 +122,5 @@ const init = function () {
   searchView.renderListnerEvent(controllerSearchResult);
   paginationView.renderListnerEvent(loadPagePreview);
   addRecipeView.addHandlerSubmitRecipe(controlSubmitrecipe);
-  welcomeMsg();
 };
 init();
